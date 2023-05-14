@@ -27,28 +27,27 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       autoIncrement: true
     },
-    name: {
-        type: DataTypes.STRING,
-        allowNull: false
+    name: { 
+      type: DataTypes.STRING,
+      allowNull: false
     },
     genre: {
-        type: DataTypes.TEXT,
-        allowNull: false
+      type: DataTypes.TEXT,
+      allowNull: false
     },
     available_start_time: {
-        type: DataTypes.DATE,
-        allowNull: false
+      type: DataTypes.DATE,
+      allowNull: false
     },
     end_time: {
-        type: DataTypes.DATE,
-        allowNull: false
-    }
+      type: DataTypes.DATE,
+      allowNull: false
+    },
   }, {
     sequelize,
     modelName: 'Band',
     tableName: 'bands',
     timestamps: false
-  })
-
+  });
   return Band;
 };

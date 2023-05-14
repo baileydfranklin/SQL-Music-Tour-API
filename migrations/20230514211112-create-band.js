@@ -24,7 +24,7 @@ module.exports = {
       end_time: {
         type: Sequelize.DATE,
         allowNull: false,
-      }
+      },
     });
   },
   async down(queryInterface, Sequelize) {
