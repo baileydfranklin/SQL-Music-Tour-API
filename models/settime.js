@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
         as: 'event'
       })
 
-      setTime.belongsTo(stage, {
+      setTime.belongsTo(Stage, {
         foreignKey: 'stage_id',
         as: 'stage'
       })
@@ -35,7 +35,7 @@ module.exports = (sequelize, DataTypes) => {
     end_time: DataTypes.DATE
   }, {
     sequelize,
-    modelName: 'setTime',
+    modelName: 'setTime'
   });
   return setTime;
 };

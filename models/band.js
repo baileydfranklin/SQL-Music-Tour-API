@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'band_id',
         as: 'meet_greets'
       })
-      Band.hasMonday( setTime, {
+      Band.hasMany( setTime, {
         foreignKey: 'band_id',
         as: 'set_times'
       })
